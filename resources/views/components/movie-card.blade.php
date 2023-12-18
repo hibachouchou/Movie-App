@@ -1,10 +1,10 @@
 <div>
     <div class="mt-8">
-        <a href="#">
+        <a href="/show/{{$movie['id'] }}">
             <img src="{{ 'https://image.tmdb.org/t/p/w500' . $movie['poster_path'] }}" alt="movie" class="hover:opacity-75">
         </a>
         <div class="mt-2 ">
-            <a href="#" class="text-lg mt-2 hover:text-gray-300 transition ease-out duration-150" >
+            <a href="/show/{{$movie['id'] }}" class="text-lg mt-2 hover:text-gray-300 transition ease-out duration-150" >
                 {{ $movie['title'] }}
             </a>
             <div class="flex items-center text-gray-400 text-sm mt-1">
