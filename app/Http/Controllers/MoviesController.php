@@ -80,10 +80,18 @@ class MoviesController extends Controller
         $url2 = 'https://api.themoviedb.org/3/movie/'. $id .'/credits?api_key=' . config('services.tmdb.token') . '&language=en-US&page=1';
         $response2 = Http::get($url2);
         $movie_credit = $response2->json();
+//
+$url3 = 'https://api.themoviedb.org/3/movie/'. $id .'/images?api_key=' . config('services.tmdb.token') . '&language=en-US&page=1';
+$response3 = Http::get($url3);
+$movie_images = $response3->json();
+//
+$url4 = 'https://api.themoviedb.org/3/movie/'. $id .'/videos?api_key=' . config('services.tmdb.token') . '&language=en-US&page=1';
+$response4 = Http::get($url4);
+$movie_vedios = $response4->json();
 
       // Debugging
-      // dd($movie_credit);
-        return view('pages.movies.show',['movie_infos'=> $movie_infos,'movie_credit'=> $movie_credit]);
+      // dd($movie_images);
+        return view('pages.movies.show',['movie_infos'=> $movie_infos,'movie_credit'=> $movie_credit,'movie_images'=> $movie_images,'movie_vedios'=> $movie_vedios]);
     }
 
     /**
