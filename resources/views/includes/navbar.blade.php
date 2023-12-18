@@ -1,6 +1,5 @@
-
-<nav class="border-b border-gray-800">
-<div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6" >
+<nav class="border-b border-gray-800 fixed w-full bg-gray-900 z-10">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
 <ul class="flex flex-col md:flex-row items-center">
 <li>
 <a href="/">
@@ -8,7 +7,7 @@
 </a>
 </li>
 <li class="md:ml-16 mt-3 md:mt-0">
-<a href="#" class="hover:text-gray-300">Movies</a>
+<a href="/" class="hover:text-gray-300">Movies</a>
 </li>
 <li class="md:ml-6 mt-3 md:mt-0">
     <a href="#" class="hover:text-gray-300">TV Shows</a>

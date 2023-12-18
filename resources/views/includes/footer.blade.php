@@ -4,3 +4,4 @@
        © 2024 Movie APP -  Hiba Chouchene
     </div>
 </footer>
+
