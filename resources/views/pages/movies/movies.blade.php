@@ -3,10 +3,10 @@
 <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Movies</h2>
 @include('pages.movies.components.popular_movies')
 </div>
-{{-- <div class="nowplaying-movies">
+<div class="nowplaying-movies">
 <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold mt-8">Now Playing</h2>
 @include('pages.movies.components.now_playing_movies')
-</div> --}}
+</div>
 <div class="toprating-movies">
 <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold mt-8">Top Rated Movies</h2>
 @include('pages.movies.components.top_rated_movies')

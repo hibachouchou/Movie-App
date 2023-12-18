@@ -15,7 +15,13 @@
                     <span>{{ \Carbon\Carbon::parse($top_rated_movie['release_date'])->format('M d, Y') }}</span>
                 </div>
                 <div class="text-gray-400 text-sm">
-                 Genre Movie
+                    @foreach ($top_rated_movie['genre_ids'] as $genre)
+                    @foreach ($genres as $g)
+                       @if($genre===$g["id"])
+               {{$g["name"]}}
+                @endif  
+                @endforeach                    
+                 @endforeach
                 </div>
             </div>
         </div> 

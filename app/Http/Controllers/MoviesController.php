@@ -30,8 +30,16 @@ class MoviesController extends Controller
        $url3 = 'https://api.themoviedb.org/3/movie/upcoming?api_key=' . config('services.tmdb.token') . '&language=en-US&page=1';
        $response3 = Http::get($url3);
        $upcoming_movies = $response3->json();
-       //dd($popular_movies);
-    return view('welcome',['popular_movies'=> $popular_movies,'now_playing_movies'=> $now_playing_movies,'top_rated_movies'=> $top_rated_movies,'upcoming_movies'=> $upcoming_movies]);
+       //
+       //dd($genres);
+      // dd($popular_movies);
+      $url4 = 'https://api.themoviedb.org/3/genre/movie/list?api_key=' . config('services.tmdb.token') . '&language=en-US&page=1';
+      $response4 = Http::get($url4);
+      $genres = $response4->json()['genres'];
+      //dd($genres);
+
+
+    return view('welcome',['popular_movies'=> $popular_movies,'now_playing_movies'=> $now_playing_movies,'top_rated_movies'=> $top_rated_movies,'upcoming_movies'=> $upcoming_movies,'genres'=>$genres]);
     }
 
 
