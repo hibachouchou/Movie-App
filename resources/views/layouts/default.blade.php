@@ -8,6 +8,7 @@
         <!-- Fonts -->
         <!-- Styles -->
         @vite('resources/css/app.css')
+        @livewireStyles
     </head>
     <body class="font-sans bg-gray-900 text-white">
      <div>
@@ -21,5 +22,6 @@
 @include('includes.footer')
 <!---->
      </div>
+     @livewireScripts
     </body>
 </html>
