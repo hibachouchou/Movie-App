@@ -7,7 +7,7 @@
         <title>Movie App</title>
         <!-- Fonts -->
         <!-- Styles -->
-        @vite('resources/css/app.css')
+        @vite(['resources/css/app.css','resources/js/app.js'])
         @livewireStyles
     </head>
     <body class="font-sans bg-gray-900 text-white">
@@ -23,5 +23,6 @@
 <!---->
      </div>
      @livewireScripts
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     </body>
 </html>
