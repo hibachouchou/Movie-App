@@ -81,7 +81,7 @@ class MoviesController extends Controller
         $response2 = Http::get($url2);
         $movie_credit = $response2->json();
 //
-$url3 = 'https://api.themoviedb.org/3/movie/'. $id .'/images?api_key=' . config('services.tmdb.token') . '&language=en-US&page=1';
+$url3 = 'https://api.themoviedb.org/3/movie/'.$id.'/images?api_key='. config('services.tmdb.token') . '&language=en-US&page=1';
 $response3 = Http::get($url3);
 $movie_images = $response3->json();
 //
