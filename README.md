@@ -1,4 +1,4 @@
 # Movie-App
-using Laravel , Tailwind css  and The themoviedb api
+using Laravel Livewire, Tailwind css ,Flowbite   and The themoviedb apI
 ## (Not ready yet) 
 ![Movie App](movie_app.png)
