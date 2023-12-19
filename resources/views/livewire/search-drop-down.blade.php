@@ -15,7 +15,7 @@
                     @foreach($searched_movies['results'] as $movie)
                        @if($loop->index < 7)
                         <li class="border-b border-gray-700">
-                            <a href="#" class="block hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150">
+                            <a href="/show/{{$movie['id'] }}" class="block hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150">
                                 <img src="https://image.tmdb.org/t/p/w92{{ $movie['poster_path'] }}" alt="poster" class="w-8">
                                 <span class="ml-4">{{ $movie['title'] }}</span>
                             </a>
