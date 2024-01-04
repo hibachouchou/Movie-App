@@ -1,5 +1,5 @@
 # Movie-App
 using Laravel Livewire, Tailwind css ,Flowbite   and The themoviedb api
 ![Movie App](movie_app.png)
- #### The quarterly results look great!
+ #### Ressources :
  - https://www.themoviedb.org/ .
